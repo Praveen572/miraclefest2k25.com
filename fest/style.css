@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;  
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #017450;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.annual-fest {
+    color: #d0a571; 
+}
+
+.logo {
+    width: 100px;
+}
+
+.header-text {
+    text-align: left;
+}
+
+header h2 {
+    margin: 5px 0;
+}
+
+section {
+    margin: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Specific background images for each category */
+#home {
+    background: rgba(166, 231, 243, 0.9) url('event_bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #eff6f6;
+}
+#banner{
+    background: rgba(166, 231, 243, 0.9) url('banner_bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #eff6f6;
+}
+
+#technical {
+    background: rgba(166, 231, 243, 0.9) url('tech_bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #eff6f6;
+}
+
+#non-technical {
+    background: rgba(166, 231, 243, 0.9) url('non1_bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #f9f6f9;
+}
+
+#special {
+    background: rgba(166, 231, 243, 0.9) url('hunt_bg.jpg') no-repeat center center;
+    background-size: cover;
+    color:white;
+}
+#food {
+    background: rgba(166, 231, 243, 0.9) url('food_bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #feffff;
+}
+#cultural {
+    background: rgba(166, 231, 243, 0.9) url('cul_bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #feffff;
+}
+#insta {
+    background: rgba(166, 231, 243, 0.9) url('soc_bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #eff6f6;
+}
+
+/* Styling for the main body image */
+.main-body-image {
+    width: 100%;
+    max-width: 800px; /* Adjust this value based on your layout */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the image */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f7f6;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e65100;
+}
+
+footer {
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.events-list {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+}
+
+.events-list h3 {
+    margin-bottom: 10px;
+}
+
+.event-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .events-container {
+        flex-direction: column;
+    }
+
+    .events-list {
+        margin: 10px 0;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+nav {
+    background-color: #00796b;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-tabs li {
+    margin: 0 10px;
+}
+
+.nav-tabs a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-tabs a:hover {
+    background-color: #004d40;
+}
+
+/* Active tab highlight */
+.nav-tabs .active a {
+    background-color: #004d40;
+    color: #e0f7fa;
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 600px) {
+    .nav-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-tabs li {
+        margin: 5px 0;
+    }
+}
